@@ -1698,11 +1698,11 @@ class PlayState extends MusicBeatState
 		senpaiEvil.x += 300;
 
 		var songName:String = Paths.formatToSongPath(SONG.song);
-		if (songName == 'roses' || songName == 'thorns')
+		if (songName == 'angry' || songName == 'reichtangle')
 		{
 			remove(black);
 
-			if (songName == 'thorns')
+			if (songName == 'reichtangle')
 			{
 				add(red);
 				camHUD.visible = false;
@@ -1721,7 +1721,7 @@ class PlayState extends MusicBeatState
 			{
 				if (dialogueBox != null)
 				{
-					if (Paths.formatToSongPath(SONG.song) == 'thorns')
+					if (Paths.formatToSongPath(SONG.song) == 'reichtangle')
 					{
 						add(senpaiEvil);
 						senpaiEvil.alpha = 0;
